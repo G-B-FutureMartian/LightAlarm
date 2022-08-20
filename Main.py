@@ -1,8 +1,20 @@
 import RPI.gpio as gpio
 import time
+from long-sleep import setTimer
 
 def setup():	# Setup for the GPIO pins on the raspberry pi
-	
+	#	set the pin names to the digital names, rather than mechanical
+	gpio.setmode(gpio.bcm)
+	#	set the four pins that will be used for controlling leds
+	gpio.setup(5, gpio.OUT)
+	gpio.setup(6, gpio.OUT)
+	gpio.setup(13, gpio.OUT)
+	gpio.setup(19, gpio.OUT)
+	#	set the red led pin
+	gpio.setup(24, gpio.OUT)
+	#	setup the pins for reading buttons
+	gpio.setup(20, gpio.IN)
+	gpio.setup(21, gpio.IN)
 
 def alarmSet():	# A function for setting the alarm
 	

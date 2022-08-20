@@ -1,7 +1,8 @@
-# LightAlarm
-LightAlarm is a silent alarm, using LEDs to wake you up.
-## How It Works
-It works by using LEDs that will slowly increase in brightness, 
-until about 20 seconds before the alarm is set to go off. Then
-the LEDs will dramitcally increase in brightness, ideally waking you up.
-If you don't wake up and stop the alarm 20 seconds
+# long-sleep
+Sleep, but for a while
+
+## Why
+So you can sleep for 257 hours, 345 minutes, and 352897 seconds without converting everything to seconds youself.
+I made this for my project github.com/G-B-FutureMartian/LightAlarm LightAlarm.
+## Dependencies
+time
